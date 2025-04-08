@@ -2,7 +2,7 @@
 markdown: kramdown
 
 url: https://nathaniel2go.github.io
-baseurl: ""/nathaniel2go.github.io""
+baseurl: ""
 
 # Title of the Site
 title: Nathaniel Go
