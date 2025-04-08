@@ -72,3 +72,30 @@ hr {
         }
     }
 }
+.typewriter-container {
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+.typewriter {
+    font-size: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    width: 0;
+    animation:
+      typing1 1.5s 1s forwards,
+      blink 0.7s step-end infinite;
+  }
+  
+  @keyframes typing1 {
+    from { width: 0; }
+    to   { width: 20.8ch; }
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
