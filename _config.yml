@@ -1,10 +1,8 @@
 # WhatATheme
 markdown: kramdown
 
-# URL of the Site
-url: nathaniel2go.github.io
-# Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
-baseurl: nathaniel2go/nathaniel2go.github.io
+url: https://nathaniel2go.github.io
+baseurl: /nathaniel2go.github.io
 
 # Title of the Site
 title: Nathaniel Go
