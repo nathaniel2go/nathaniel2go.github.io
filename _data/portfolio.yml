@@ -1,0 +1,17 @@
+- category: Photography
+  items:
+    - title:
+      description: A beautiful sunset over the mountains.
+      image: /assets/images/portfolio/sunset.jpg
+    - title: Cityscape
+      description: A bustling city at night.
+      image: /assets/images/portfolio/cityscape.jpg
+
+- category: Graphics
+  items:
+    - title: Logo Design
+      description: A modern logo for a tech company.
+      image: /assets/images/portfolio/logo.jpg
+    - title: Poster
+      description: A creative poster for an event.
+      image: /assets/images/portfolio/poster.jpg

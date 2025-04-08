@@ -38,6 +38,11 @@ google-analytics:
 # Disqus
 disqus-shortname: 
 
+collections:
+  portfolios:
+    output: true
+    permalink: /portfolios/:title/
+
 # Name of the Author
 author-name: Nathaniel Go
 # URL for the Image of the Author
