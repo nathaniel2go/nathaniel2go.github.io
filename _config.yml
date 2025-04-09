@@ -9,11 +9,11 @@ title: Nathaniel Go
 # Description of the Site
 description:  Nathaniel Go's Personal Site.
 # URL of Image of the Site
-site-image: /WhatATheme/assets/images/meta.jpg
+site-image: /WhatATheme/assets/images/sunset.jpg
 # Keywords of the Site
 site-keywords: Photography, Portfolio, Graphics, CAD, Engineering, SYDE, Systems Design Engineering, UW, Uwaterloo, University of Waterloo
 # URL for the Image of custom Favicon
-favicon-url: 
+favicon-url: /assets/images/favicon.png
 
 # URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
 heroimage: https://i.imgur.com/pw7cLms.jpeg
@@ -33,10 +33,10 @@ dribbble_username:
 spotify_username: 
 
 # Google Analytics
-google-analytics: 
+google-analytics:  G-BSP2XT9HPB
 
 # Disqus
-disqus-shortname: 
+disqus-shortname: nathaniel2gowebsite
 
 collections:
   portfolios:

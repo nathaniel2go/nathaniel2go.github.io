@@ -99,7 +99,7 @@ hr {
     border-right: 2px solid rgb(130, 130, 130);
     width: 0;
     animation:
-      typing1 1.5s 1s forwards,
+      typing1 1.5s steps(18) 1s forwards,
       blink 0.8s step-end infinite;
   }
   
