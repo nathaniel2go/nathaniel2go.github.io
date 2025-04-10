@@ -47,10 +47,10 @@ body {
     font-weight: bold;
 }
 
-.columns {
+/* .columns {
   display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Add space between cards */
+    justify-content: space-between; 
     .button {
         margin: 0.5rem !important;
     }
@@ -62,9 +62,9 @@ hr {
 }
 
 .column {
-  flex: 0 0 30%; /* Set each card to 30% width */
-  margin-bottom: 1rem; /* Add space below each card */
-}
+  flex: 0 0 30%; 
+  margin-bottom: 1rem; 
+} */
 
 .searchResult {
     a {
@@ -167,4 +167,19 @@ body { font-family: sans-serif; }
 .grid-item img {
   display: block;
   max-width: 100%;
+}
+
+#blog .container {
+  margin-top: 1rem; /* Reduce top margin */
+  margin-bottom: 1rem; /* Reduce bottom margin */
+}
+
+.hero-body {
+  padding-top: 1rem; /* Reduce padding at the top */
+  padding-bottom: 1rem; /* Reduce padding at the bottom */
+}
+
+#blog h1, #blog h2, #blog h3 {
+  margin-top: 0.5rem; /* Reduce top margin for headings */
+  margin-bottom: 0.5rem; /* Reduce bottom margin for headings */
 }
