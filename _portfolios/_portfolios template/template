@@ -1,0 +1,56 @@
+---
+layout: portfolio-item
+image: /assets/images/portfolios/studio/thumbnail.jpg
+category: Photography
+---
+
+<h1 class="text-4xl font-bold text-center mb-8">People</h1>
+
+<div class="grid">
+    <div class="grid-sizer"></div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/studio/image.jpg" />
+    </div>
+  </div>
+  
+  <style>
+
+    body {
+      padding-top: 80px; /* Adjust based on the height of your header */
+    }
+
+    .grid {
+      display: block;
+      margin: 0 auto;
+    }
+  
+    .grid-sizer,
+    .grid-item {
+      width: 33.333%;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+  
+    .grid-item img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+  </style>
+  
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+  
+  <script>
+    var grid = document.querySelector('.grid');
+    var msnry;
+  
+    imagesLoaded(grid, function () {
+      msnry = new Masonry(grid, {
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-sizer',
+        percentPosition: true
+      });
+    });
+  </script>

@@ -29,9 +29,9 @@ title: Portfolios
 
     <article class="portfolio-item">
         <div class="container">
-            <h1 class="title">{{ page.title }}</h1>
+            <!--<h1 class="title">{{ page.title }}</h1>
             <img src="{{ page.image }}" alt="{{ page.title }}">
-            <p>{{ page.description }}</p>
+            <p>{{ page.description }}</p> -->
             <div class="portfolio-details">
                 {{ content }}
             </div>
@@ -42,3 +42,29 @@ title: Portfolios
 </body>
 
 </html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const images = document.querySelectorAll(".dynamic-aspect-ratio");
+
+      images.forEach((img) => {
+          img.addEventListener("load", () => {
+              const aspectRatio = img.naturalWidth / img.naturalHeight;
+              const parent = img.parentElement;
+
+              if (aspectRatio > 1) {
+                  // Landscape
+                  parent.style.aspectRatio = `${img.naturalWidth} / ${img.naturalHeight}`;
+              } else if (aspectRatio < 1) {
+                  // Portrait
+                  parent.style.aspectRatio = `${img.naturalWidth} / ${img.naturalHeight}`;
+              } else {
+                  // Square
+                  parent.style.aspectRatio = "1 / 1";
+              }
+          });
+      });
+  });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>

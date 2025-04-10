@@ -1,0 +1,116 @@
+---
+layout: portfolio-item
+image: /assets/images/portfolios/nature/thumbnail.jpg
+category: Photography
+---
+
+<h1 class="text-4xl font-bold text-center mb-8">Nature</h1>
+
+<div class="grid">
+    <div class="grid-sizer"></div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/nature/image1.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/nature/image2.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/nature/image3.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/nature/image4.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/nature/image5.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/nature/image6.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/nature/image7.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/nature/image8.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/nature/image9.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/nature/image10.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/nature/image11.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/nature/image12.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/nature/image13.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/nature/image14.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/nature/image15.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/nature/image16.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/nature/image17.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/nature/image18.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/nature/image19.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/nature/image20.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/nature/image21.jpg" />
+    </div>
+  </div>
+  
+  <style>
+
+    body {
+      padding-top: 80px; /* Adjust based on the height of your header */
+    }
+
+    .grid {
+      display: block;
+      margin: 0 auto;
+    }
+  
+    .grid-sizer,
+    .grid-item {
+      width: 33.333%;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+  
+    .grid-item img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+  </style>
+  
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+  
+  <script>
+    var grid = document.querySelector('.grid');
+    var msnry;
+  
+    imagesLoaded(grid, function () {
+      msnry = new Masonry(grid, {
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-sizer',
+        percentPosition: true
+      });
+    });
+  </script>

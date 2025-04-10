@@ -48,6 +48,9 @@ body {
 }
 
 .columns {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Add space between cards */
     .button {
         margin: 0.5rem !important;
     }
@@ -59,8 +62,8 @@ hr {
 }
 
 .column {
-    margin: auto 0.5rem;
-    padding: 0.5rem;
+  flex: 0 0 30%; /* Set each card to 30% width */
+  margin-bottom: 1rem; /* Add space below each card */
 }
 
 .searchResult {
@@ -86,7 +89,9 @@ hr {
   
 .typewriter-container {
     width: 100%;
+    max-width: 100%;
     min-height: 10vh;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,6 +103,7 @@ hr {
     overflow: hidden;
     border-right: 2px solid rgb(130, 130, 130);
     width: 0;
+    max-width: 25ch;
     animation:
       typing1 1.5s steps(18) 1s forwards,
       blink 0.8s step-end infinite;
@@ -105,9 +111,60 @@ hr {
   
   @keyframes typing1 {
     from { width: 0; }
-    to   { width: 20.8ch; }
+    to   { width: 26ch; }
   }
   
   @keyframes blink {
     50% { border-color: transparent; }
   }
+  
+.buttons {
+    display: flex;
+    flex-wrap: wrap; /* Prevent wrapping */
+    gap: 0rem; /* Add spacing between buttons */
+    justify-content: flex-start; /* Align buttons to the left */
+}
+
+@media (max-width: 768px) {
+    .typewriter {
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
+    }
+}
+
+
+
+* { box-sizing: border-box; }
+
+/* force scrollbar */
+html { overflow-y: scroll; }
+
+body { font-family: sans-serif; }
+
+/* ---- grid ---- */
+
+.grid {
+  background: #fff;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}

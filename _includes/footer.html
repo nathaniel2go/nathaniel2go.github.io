@@ -1,8 +1,11 @@
 <footer id="footer">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Footer Button-->
-    <div class="container has-text-centered has-background-grey-darker" id="backtotop">
-        <a class="has-text-white" onclick="window.scroll(0,0)">BACK TO TOP</a>
-    </div>
+    <a class="has-text-white" onclick="window.scroll(0,0)">
+        <div class="container has-text-centered has-background-grey-darker" id="backtotop">
+            <span class="material-icons">arrow_upward</span>
+        </div>
+    </a>
     <!--Footer Main Section-->
     <div class="has-background-grey-darker">
         <div class="container columns">
@@ -52,3 +55,22 @@
         </div>
     </div>
 </footer>
+
+<style>
+    #backtotop a {
+        font-size: 24px; /* Adjust the size of the icon */
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    #backtotop a:hover {
+        color: #5a5a5a; /* Change color on hover */
+    }
+
+    .material-icons {
+        vertical-align: middle; /* Align the icon properly */
+    }
+</style>

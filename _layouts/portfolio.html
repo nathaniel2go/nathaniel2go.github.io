@@ -3,6 +3,8 @@ layout: compress
 title: Portfolios
 ---
 
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 <!DOCTYPE html>
 <html>
 
@@ -13,11 +15,11 @@ title: Portfolios
 
     <section class="hero is-fullheight" id="portfolios">
         <div class="hero-body">
-            <div class="container">
+            <div class="container is-fluid">
                 <h1 class="title has-text-centered">{{ page.title }}</h1>
                 <div class="columns is-multiline">
                     {% for portfolio in site.portfolios %}
-                        <div class="column is-one-third">
+                        <div class="column is-one-third-desktop is-one-third-tablet is-full-mobile">
                             <div class="card">
                                 <div class="card-image">
                                     <figure class="image is-4by3">
@@ -26,8 +28,9 @@ title: Portfolios
                                 </div>
                                 <div class="card-content">
                                     <h2 class="title is-4">{{ portfolio.title }}</h2>
-                                    <p>{{ portfolio.description }}</p>
-                                    <a href="{{ portfolio.url }}" class="button is-link">View Details</a>
+                                    <a href="{{ portfolio.url }}" class="button custom-button">
+                                        <span class="material-icons">arrow_forward</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -39,5 +42,47 @@ title: Portfolios
 
     {% include footer.html %}
 </body>
+
+<style>
+    body {
+      padding-top: 40px; /* Adjust based on the height of your header */
+    }
+    h1 {
+      margin: 40px 0 20px; /* Add space above and below the title */
+      text-align: center; /* Center the title */
+    }
+    .columns {
+        margin-top: 20px; /* Add space between the title and the portfolio grid */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Add space between cards */
+    }
+    .column {
+        flex: 0 0 30%; /* Set each card to 30% width */
+        margin-bottom: 1rem; /* Add space below each card */
+    }
+    .custom-button {
+        background-color: #d3d3d3; /* Light grey background */
+        color: #000; /* Black arrow color */
+        border: none;
+        padding: 10px 30px; /* Increase horizontal padding to make the button longer */
+        border-radius: 5px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        width: auto; /* Ensure the button adjusts to its content */
+    }
+
+    .custom-button:hover {
+        background-color: #b0b0b0; /* Slightly darker grey on hover */
+    }
+
+    .material-icons {
+        font-size: 18px; /* Adjust arrow size */
+    }
+</style>
 
 </html>
