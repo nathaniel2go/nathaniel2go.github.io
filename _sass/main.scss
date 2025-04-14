@@ -175,3 +175,22 @@ body { font-family: sans-serif; }
   font-size: 3rem; /* Adjust the font size if needed */
   font-weight: 400; /* Adjust the font weight */
 }
+
+/* Responsive adjustments for mobile screens */
+@media screen and (max-width: 768px) {
+  /* Adjust the title font size */
+  .custom-title {
+      font-size: 1.5rem; /* Reduce font size for smaller screens */
+      white-space: nowrap; /* Prevent wrapping */
+  }
+
+  /* Adjust the typewriter module */
+  .typewriter-container {
+      max-width: 90%; /* Ensure the container fits within the screen */
+  }
+
+  .typewriter {
+      font-size: 1.2rem; /* Reduce font size for smaller screens */
+      max-width: 100%; /* Allow the full text to fit */
+  }
+}
