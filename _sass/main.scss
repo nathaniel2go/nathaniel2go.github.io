@@ -180,18 +180,18 @@ body { font-family: sans-serif; }
 @media screen and (max-width: 768px) {
   /* Adjust the title font size */
   .custom-title {
-      font-size: 1.2rem; /* Reduce font size for smaller screens */
+      font-size: 1.0rem; /* Reduce font size for smaller screens */
       white-space: nowrap; /* Prevent wrapping */
       overflow: hidden;
   }
 
   /* Adjust the typewriter module */
   .typewriter-container {
-      max-width: 90%; /* Ensure the container fits within the screen */
+      max-width: 95%; /* Ensure the container fits within the screen */
   }
 
   .typewriter {
-      font-size: 1.0rem; /* Reduce font size for smaller screens */
+      font-size: 0.8rem; /* Reduce font size for smaller screens */
       max-width: 100%; /* Allow the full text to fit */
   }
 }
