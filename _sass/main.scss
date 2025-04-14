@@ -194,4 +194,14 @@ body { font-family: sans-serif; }
       font-size: 0.8rem; /* Reduce font size for smaller screens */
       max-width: 100%; /* Allow the full text to fit */
   }
+
+  .button-group {
+    flex-direction: column; /* Stack buttons vertically on mobile */
+    align-items: center; /* Center buttons in the column layout */
+  }
+
+  .button-group .button {
+    width: 100%; /* Make buttons full-width on mobile */
+    max-width: 300px; /* Optional: Limit the button width */
+  }
 }
