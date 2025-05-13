@@ -32,7 +32,39 @@ I began animation on 1s at 24 fps which was pretty standard. I worked using refe
 
 ## Refinement
 
-There are many projects between the video above and the following, all of which were spent improving on these fundamentals and getting used to the animation workflow.
+There are many projects between the video above and the following events, all of which were spent improving on these fundamentals and getting used to the animation workflow.
+
+## Refinement
+
+There are many projects between the video above and the following, all of which were spent improving on these fundamentals and getting used to the animation workflow. Over time using these keybinds, blender features, camera movement, and character movement became more natural. This is obvious as practice begets familiarity, but what I could do in an hr session at the beginning quickly became a short 15 minutes task. Combining synthesized knowledge with tool muscle memory made animation much cleaner and smoother. 
+
+This is also around the time that I started animation using breakdowns, extremes, and inbetweens. Before I used a very linear system, working from point A to B frame by frame. There are benefits to this, but I often found myself modifying poses mid animation, which meant changing all of the previous and future frames. Utilizing breakdowns helped to improve my posing, as I could focus time on perfecting certain poses, then working inbetween them. I typically did the start, the end, then the middle with more breakdowns dividing the main ones. I then proceeded to work on extremes which usually included dramatic overshoots, then the inbetweens to smooth out the movement.
+
+<figure>
+    <img src="/assets/images/blogs/Overshoot1.jpg"
+         alt="OVershoot example"
+         style="max-height: 60vh; width: auto;">
+    <figcaption>Blender 3.6.</figcaption>
+</figure>
+
+<figure>
+    <img src="/assets/images/blogs/Overshoot2.jpg"
+         alt="Overshoot example"
+         style="max-height: 60vh; width: auto;">
+    <figcaption>Blender 3.6.</figcaption>
+</figure>
+
+Around February, I began to animate on 2s instead of 1s. This was done to focus my efforts on posing and character expression rathan than the sheer number of frames (as I had to animate every other frame rather than every sequential one), but was also done because I am fond of the choppier, more exaggerated aesthetic. I took inspiration from arcade fighting games like Street Fighter and Mortal Kombat, with a more recent title being Skull Girls. The lead animator for Skull Girls had a great conference on the animation style and techniques used which I hinged some of my main animation projects on. [INSERT PHOTO OF TIMELINES]  
+
+The following is a short made up fighting kit of Sucrose's character, containing a string of light attacks and an ultimate of sorts. For the light attacks I used a variety of generic fighting animations from characters that focused more on magic, spells, or summoning, while the ultimate was just for fun and modelled after an MLB baseball pitch. 
+
+<figure>
+    <video controls style="max-height: 60vh; width: auto;">
+        <source src="/assets/images/blogs/SucroseFightingPewPew.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <figcaption>Short fighting game loop. Apr 7th 2025</figcaption>
+</figure>
 
 <figure>
     <video controls style="max-height: 60vh; width: auto;">
@@ -41,3 +73,7 @@ There are many projects between the video above and the following, all of which 
     </video>
     <figcaption>Short fighting game loop. Apr 7th 2025</figcaption>
 </figure>
+
+This is my most polished animation project to date, and it's a short one for sure. My knowledge on environments, objects, and lighting is limited, and I predict that each element I add to my production will be another lengthy learning process. For this set of animations, I use a 'book' which was two rectangular prims, and 'bolts of magic' which were all manually animated. Particle animation with wind and fire interest me, but I suppose those things will have to come later. 
+
+I will be putting this animation train on hold for more discipline related projects as the study term picks up. I don't plan on dropping this field as it interests me and I find it satisfying to work on and see completed projects. 
