@@ -1,7 +1,7 @@
 ---
-title: Animating in Blender and bashing my head against keyframes-
+title: Animating in Blender 3.6
 layout: post
-post-image: "/assets/images/blogs/PCF.jpg"
+post-image: "/assets/images/blogs/blender.jpg"
 description: I had a little animation stint which assisted in navigating in a 3d design space. It was fun to interact with a visual medium which I hadn't before, while studying some of the artistic theory essentials.
 tags:
 - Animation
@@ -44,14 +44,14 @@ This is also around the time that I started animation using breakdowns, extremes
     <img src="/assets/images/blogs/Overshoot1.jpg"
          alt="OVershoot example"
          style="max-height: 60vh; width: auto;">
-    <figcaption>Blender 3.6.</figcaption>
+    <figcaption>Overshoot frame.</figcaption>
 </figure>
 
 <figure>
     <img src="/assets/images/blogs/Overshoot2.jpg"
          alt="Overshoot example"
          style="max-height: 60vh; width: auto;">
-    <figcaption>Blender 3.6.</figcaption>
+    <figcaption>Final pose.</figcaption>
 </figure>
 
 Around February, I began to animate on 2s instead of 1s. This was done to focus my efforts on posing and character expression rathan than the sheer number of frames (as I had to animate every other frame rather than every sequential one), but was also done because I am fond of the choppier, more exaggerated aesthetic. I took inspiration from arcade fighting games like Street Fighter and Mortal Kombat, with a more recent title being Skull Girls. The lead animator for Skull Girls had a great conference on the animation style and techniques used which I hinged some of my main animation projects on. [INSERT PHOTO OF TIMELINES]  
