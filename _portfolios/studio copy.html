@@ -1,0 +1,104 @@
+---
+layout: portfolio-item
+image: /assets/images/portfolios/studio/thumbnail.jpg
+category: Photography
+---
+
+<h1 class="text-4xl font-bold text-center mb-8">Studio</h1>
+
+<div class="grid">
+    <div class="grid-sizer"></div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/studio/image1.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/studio/image2.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/studio/image3.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/studio/image4.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/studio/image5.png" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/studio/image6.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/studio/image7.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/studio/image8.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/studio/image9.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/studio/image10.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/studio/image11.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/studio/image12.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/studio/image13.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/studio/image14.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/studio/image15.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/studio/image16.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/studio/image17.jpg" />
+    </div>
+  </div>
+  
+  <style>
+
+    body {
+      padding-top: 80px; /* Adjust based on the height of your header */
+    }
+
+    .grid {
+      display: block;
+      margin: 0 auto;
+    }
+  
+    .grid-sizer,
+    .grid-item {
+      width: 33.333%;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+  
+    .grid-item img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+  </style>
+  
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+  
+  <script>
+    var grid = document.querySelector('.grid');
+    var msnry;
+  
+    imagesLoaded(grid, function () {
+      msnry = new Masonry(grid, {
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-sizer',
+        percentPosition: true
+      });
+    });
+  </script>
