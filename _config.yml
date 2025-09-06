@@ -43,6 +43,9 @@ collections:
     output: true
     permalink: /portfolios/:title/
 
+# Portfolio sorting options: "order", "date", or "title"
+portfolio_sort_by: "order"
+
 # Name of the Author
 author-name: Nathaniel Go
 # URL for the Image of the Author

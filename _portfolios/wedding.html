@@ -1,0 +1,119 @@
+---
+layout: portfolio-item
+image: /assets/images/portfolios/wedding/thumbnail.jpg
+category: Photography
+order: 1
+date: 2025-03-15
+title: Wedding
+---
+
+<h1 class="text-4xl font-bold text-center mb-8">Wedding</h1>
+
+<div class="grid">
+    <div class="grid-sizer"></div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/wedding/image1.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/wedding/image2.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/wedding/image3.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/wedding/image4.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/wedding/image5.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/wedding/image6.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/wedding/image7.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/wedding/image8.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/wedding/image9.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/wedding/image10.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/wedding/image11.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/wedding/image12.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/wedding/image13.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/wedding/image14.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/wedding/image15.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/wedding/image16.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/wedding/image17.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/wedding/image18.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/wedding/image19.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/wedding/image20.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/wedding/image21.jpg" />
+    </div>
+  </div>
+  
+  <style>
+
+    body {
+      padding-top: 80px; /* Adjust based on the height of your header */
+    }
+
+    .grid {
+      display: block;
+      margin: 0 auto;
+    }
+  
+    .grid-sizer,
+    .grid-item {
+      width: 33.333%;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+  
+    .grid-item img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+  </style>
+  
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+  
+  <script>
+    var grid = document.querySelector('.grid');
+    var msnry;
+  
+    imagesLoaded(grid, function () {
+      msnry = new Masonry(grid, {
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-sizer',
+        percentPosition: true
+      });
+    });
+  </script>

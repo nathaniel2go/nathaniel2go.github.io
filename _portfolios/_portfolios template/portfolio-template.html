@@ -1,0 +1,60 @@
+---
+layout: portfolio-item
+image: /assets/images/portfolios/[FOLDER_NAME]/thumbnail.jpg
+category: Photography
+order: [NUMBER]
+date: [YYYY-MM-DD]
+title: [PORTFOLIO_TITLE]
+---
+
+<h1 class="text-4xl font-bold text-center mb-8">[PORTFOLIO_TITLE]</h1>
+
+<div class="grid">
+    <div class="grid-sizer"></div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/[FOLDER_NAME]/image1.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="{{ site.baseurl }}/assets/images/portfolios/[FOLDER_NAME]/image2.jpg" />
+    </div>
+    <!-- Add more images as needed -->
+</div>
+
+<style>
+  .grid {
+    width: 100%;
+  }
+
+  .grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .grid-sizer,
+  .grid-item {
+    width: 48%;
+    margin-bottom: 2%;
+  }
+
+  .grid-item {
+    float: left;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+
+  .grid-item img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    .grid-sizer,
+    .grid-item {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+</style>

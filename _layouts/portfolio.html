@@ -18,7 +18,15 @@ title: Portfolios
             <div class="container is-fluid">
                 <h1 class="title has-text-centered">{{ page.title }}</h1>
                 <div class="columns is-multiline">
-                    {% for portfolio in site.portfolios %}
+                    {% case site.portfolio_sort_by %}
+                      {% when 'date' %}
+                        {% assign sorted_portfolios = site.portfolios | sort: 'date' | reverse %}
+                      {% when 'title' %}
+                        {% assign sorted_portfolios = site.portfolios | sort: 'title' %}
+                      {% else %}
+                        {% assign sorted_portfolios = site.portfolios | sort: 'order' %}
+                    {% endcase %}
+                    {% for portfolio in sorted_portfolios %}
                         <div class="column is-one-third-desktop is-one-third-tablet is-full-mobile">
                             <div class="card">
                                 <div class="card-image">
